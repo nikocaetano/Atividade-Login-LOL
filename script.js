@@ -1,16 +1,12 @@
-const [inputOne, inputTwo] = document.querySelectorAll('input')
+const [input1, input2] = document.querySelectorAll('input')
 const button = document.querySelectorAll('button')
-console.log(inputOne, inputTwo)
 
 function handleChange(){
-    const [inputOne, inputTwo] = login
-    if(inputOne.value && inputTwo.value.length >= 8){
-        button.classList.add('acesso liberado')
-        console.log('acesso liberado')
+    if(input1.value && input2.value.length >= 8){
+        button.classList.add('liberado')
     }else{
-        button.classList.remove('acesso negado')
+        button.classList.remove('liberado')
     }
 }
-login.forEach(function(input)){
-    input.addEventListener('input', handleChange)    
-};
+input1.addEventListener('input', handleChange)  
+input2.addEventListener('input', handleChange)  
