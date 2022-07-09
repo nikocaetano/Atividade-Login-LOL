@@ -133,8 +133,12 @@ button{
     border-radius: 10% ;
 }
 .liberado {
-    background-color: #FF002E;
+    width:2.5vw;
+    border-radius: 10%;
+    height: 2.5vw;
+    transform: scale(110%);
 }
+
 button img{
     width: 70%;
 }

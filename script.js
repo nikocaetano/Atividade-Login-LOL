@@ -1,5 +1,5 @@
-const [input1, input2] = document.querySelectorAll('input')
-const button = document.querySelectorAll('button')
+let [input1, input2] = document.querySelectorAll('input')
+let acesso = document.querySelectorAll('button')
 
 function handleChange(){
     if(input1.value && input2.value.length >= 8){
@@ -10,3 +10,5 @@ function handleChange(){
 }
 input1.addEventListener('input', handleChange)  
 input2.addEventListener('input', handleChange)  
+
+//Não finalizado
