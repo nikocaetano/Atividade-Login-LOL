@@ -126,17 +126,17 @@ body {
 }
 
 button{
-    background-color: #FF002E;
+    background-color: #A6A6A6;
     border: none;
     height: 2.5vw;
     width: 2.5vw;
     border-radius: 10% ;
+    transition: ease-in-out 1s;
 }
+
 .liberado {
-    width:2.5vw;
-    border-radius: 10%;
-    height: 2.5vw;
     transform: scale(110%);
+    background-color: #FF002E;
 }
 
 button img{

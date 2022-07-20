@@ -1,14 +1,17 @@
-let [input1, input2] = document.querySelectorAll('input')
-let acesso = document.querySelectorAll('button')
+let input = document.querySelector ('.input1')
+let input2 = document.querySelector ('.input2')
+let button = document.querySelector ('.loginButton')
+let seta = document.querySelector ('.seta')
 
-function handleChange(){
-    if(input1.value && input2.value.length >= 8){
+input.addEventListener('input', habilitar)
+input2.addEventListener('input', habilitar)
+
+function habilitar(){
+    if (input.value.length >=1 && input2.value.length >= 8){
         button.classList.add('liberado')
-    }else{
+        seta.classList.add('liberado')
+    } else{
         button.classList.remove('liberado')
-    }
-}
-input1.addEventListener('input', handleChange)  
-input2.addEventListener('input', handleChange)  
-
-//Não finalizado
+        seta.classList.remove('liberado')
+    } 
+} 
